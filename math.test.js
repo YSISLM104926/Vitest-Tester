@@ -22,7 +22,7 @@ it('it need to be return NaN', ()=> {
 
 it('it need to be return the correct sum', ()=> {
     let numbers = ['1','2','3'];
-    let expectedResult = numbers.reduce((acc,cur)=> acc+cur);
+    let expectedResult = numbers.reduce((acc,cur)=> +acc + +cur);
     let result = Add(numbers);
     expect(result).toBe(expectedResult);
 })
